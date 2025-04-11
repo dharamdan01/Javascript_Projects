@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <img src="./Media/img.png" class="song-img">
+            <h1>Ho Nahi Sakta</h1>
+            <p>Udit naryan & Alka Yagnik</p>
+            <audio id="song">
+                <source src="./Media/song-1.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <img src="./Media/backward.png" alt="">
+                </div>
+                <div>
+                    <span id="controlIcon" onclick="playPause()"><img src="./Media/play-button.png" alt=""></span>
+                </div>
+                <div>
+                    <img src="./Media/fast-forward.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
